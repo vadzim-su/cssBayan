@@ -1,0 +1,56 @@
+* {
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.accordion:hover section {
+  color: blue;
+  transition: all 0.2s linear;
+
+}
+
+.wrapper {
+  width: calc(100% - 60px);
+  max-width: 600px;
+  padding: 20px 0;
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mem-image {
+  /* display: none; */
+  height: 0;;
+}
+
+.text:hover + .image>.mem-image {
+  /* visibility: visible; */
+  height: auto;
+  transition: all 0.6s linear;
+  /* color: blue; */
+}
+
+.text-mem,
+.icon-mem {
+  cursor: pointer;
+}
+
+.icon-mem {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+}
+
+.mem-image {
+  display: block;
+  margin: 0 auto;
+}
